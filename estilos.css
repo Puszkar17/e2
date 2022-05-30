@@ -1,0 +1,90 @@
+/*#796b58 #b9a17f #FFFFFF #B6FFAD*/
+
+
+*{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    margin: 0;
+    background-color: #796b58;
+}
+
+.menu{
+    position: fixed;
+    height: 18%;
+    width: 100%;
+    display: flex; 
+    transition: all 0.5 ease;  
+  
+}
+
+.navi{
+    
+    display: flex;
+    width:100%;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;  
+    padding-right: 100px;  
+    
+    
+}
+
+.navi a {
+   
+    text-decoration: none;
+    font-style: none;
+    justify-content: space-around;
+    justify-items: flex-end;
+    color: white;
+    background-color:#796b58 ;
+    text-transform: uppercase;
+    font-size: medium;
+    padding: 20px;
+     
+}
+
+button{
+    
+    border: none;
+    background-color: #796b58;   
+
+}
+
+button :hover{
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 9px;
+    color: black;
+    transition: 1.5s;
+    
+}
+
+img {
+     
+    width:10%;
+    height: 100%;
+
+}
+
+main{
+    height: 100%;
+}
+
+section{
+    height: 100vh;
+    background-color: #b9a17f;
+}
+
+.menu.active a{
+    background-color: transparent;
+    
+}.menu.active button{
+    background-color: transparent;
+}
+
+
+    
