@@ -1,4 +1,4 @@
-/*#796b58 #b9a17f #FFFFFF #B6FFAD*/
+/* #7D7764    #FFFFFF   #DD4D4D   #71D18E  */
 
 
 *{
@@ -9,7 +9,7 @@
 
 body{
     margin: 0;
-    background-color:#635a4e;
+    background-color:#303030;
     
 }
 
@@ -42,7 +42,7 @@ body{
     justify-content: space-around;
     justify-items: flex-end;
     color: white;
-    background-color:#635a4e ;
+    background-color:#303030 ;
     text-transform: uppercase;
     font-size: medium;
     padding: 20px;
@@ -52,7 +52,7 @@ body{
 button{
     
     border: none;
-    background-color: #635a4e;   
+    background-color: #303030;   
 
 }
 
@@ -60,7 +60,7 @@ button :hover{
     background-color: aliceblue;
     border-radius: 20px;
     padding: 9px;
-    color: black;
+    color: #DD4D4D;
     transition: 1.5s;
     
 }
@@ -78,7 +78,7 @@ main{
 
 section{
     height: 100vh;
-    background-color:#796b58;
+    background-color:#303030;
 }
 
 .menu.active a{
@@ -112,7 +112,7 @@ section{
 
 .lupa{
     cursor: pointer;
-    background-color: rgb(255, 255, 255);
+    background-color: #DD4D4D ;
     width: 40px;
     height: 40px;
     font-size: 20px;
@@ -120,7 +120,7 @@ section{
     text-align: center;
     display: grid;
     place-items: center;
-    color: #796b58;
+    color: white;
     position: fixed;
     
     
@@ -147,29 +147,29 @@ section{
     position: relative;
     font-size: 30;
     color: white;
-    item text-decoration: 0;
+    text-decoration: 0;
     
     
 
 }
 
 #Sucursales{
-    background-color: #635a4e;
+    background-color: #363636;
 
 }
 
 #SobreNosotros{
-    background-color: #796b58;
+    background-color: #303030;
 
 }
 
 #Contacto{
-    background-color: #635a4e;
+    background-color: #363636;
 }
 
 footer{
 
-    background-color: #796b58;
+    background-color: #303030;
     height: 100px;
 
 }
@@ -196,10 +196,10 @@ footer{
 .card{
     display: flex;
     flex-direction: column;
-    background-color: rgba(162, 173, 175, 0.185);
+    background-color: rgba(145, 145, 145, 0.075);
     backdrop-filter: blur(20px);
     border-radius: 20px;
-    border: 2px rgba(137, 138, 138, 0.548) solid;
+    border: 2px rgba(202, 202, 202, 0.096) solid;
     width: 20%;
     height: 50%;
     margin-bottom: 30px;
@@ -232,7 +232,7 @@ footer{
 }
 
 .top i:hover {
-    color: rgba(7, 7, 7, 0.692);
+    color: #DD4D4D ;
     transition: 0.8s;
 }
 
@@ -284,12 +284,38 @@ footer{
 }
 
 .pie i:hover {
-    color: rgba(7, 7, 7, 0.692);
+    color: #71D18E;
     transition: 0.8s;
 }
 
-.card:hover {
+/*.card:hover {
     -webkit-box-shadow: 0px 0px 300px -61px rgba(148,148,148,1);
     -moz-box-shadow: 0px 0px 300px -61px rgba(148,148,148,1);
     box-shadow: 0px 0px 300px -61px rgba(148,148,148,1);
+}*/
+
+.points{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    left: 98%;
+}
+
+
+
+.points i{
+    padding-top: 30px;
+    color:#71D18E;
+
+}
+
+
+.submenu{
+    position: fixed;
+    top: 0;
+    left: 96.55%;
+    width: 7vh;
+    height: 100vh;
+    background-color: #3030304f;
 }
