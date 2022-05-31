@@ -9,7 +9,7 @@
 
 body{
     margin: 0;
-    background-color: #796b58;
+    background-color:#635a4e;
     
 }
 
@@ -42,7 +42,7 @@ body{
     justify-content: space-around;
     justify-items: flex-end;
     color: white;
-    background-color:#796b58 ;
+    background-color:#635a4e ;
     text-transform: uppercase;
     font-size: medium;
     padding: 20px;
@@ -52,7 +52,7 @@ body{
 button{
     
     border: none;
-    background-color: #796b58;   
+    background-color: #635a4e;   
 
 }
 
@@ -78,7 +78,7 @@ main{
 
 section{
     height: 100vh;
-    background-color: #b9a17f;
+    background-color:#796b58;
 }
 
 .menu.active a{
@@ -147,7 +147,149 @@ section{
     position: relative;
     font-size: 30;
     color: white;
+    item text-decoration: 0;
     
     
 
+}
+
+#Sucursales{
+    background-color: #635a4e;
+
+}
+
+#SobreNosotros{
+    background-color: #796b58;
+
+}
+
+#Contacto{
+    background-color: #635a4e;
+}
+
+footer{
+
+    background-color: #796b58;
+    height: 100px;
+
+}
+
+#Productos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin-top: 100px;
+    height: 70vh;
+    width: 90%;
+
+    
+
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(162, 173, 175, 0.185);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 2px rgba(137, 138, 138, 0.548) solid;
+    width: 20%;
+    height: 50%;
+    margin-bottom: 30px;
+    cursor: pointer;
+
+}
+
+.top{
+    width: 100%;
+    height: 25%;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    text-align: center;
+    text-justify: center;
+    
+
+}
+.top h3{
+    color: rgba(255, 255, 255, 0.863);
+    width: 100%;
+    padding-top: 15px;
+    
+}
+
+.top i{
+    font-size: 25px;
+    background-color:transparent;
+    color: rgba(255, 255, 255, 0.863);
+    padding: 5px;
+}
+
+.top i:hover {
+    color: rgba(7, 7, 7, 0.692);
+    transition: 0.8s;
+}
+
+.mid{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid img{
+   
+    width: auto;
+}
+
+.pie{
+    width: 100%;
+    height: 25%;
+    background-color: ;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+   
+
+}
+
+.pie i{
+    font-size: 25px;
+    border: 2px rgba(137, 138, 138, 0.548) solid;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.863);
+    
+}
+
+.pie p{
+    width: 100%;
+    height: 70%;
+    padding: 0;
+    margin: 0;
+    margin-left: 25px;
+    font-size:20px;
+    color: rgba(255, 255, 255, 0.863)
+
+}
+
+.pie i:hover {
+    color: rgba(7, 7, 7, 0.692);
+    transition: 0.8s;
+}
+
+.card:hover {
+    -webkit-box-shadow: 0px 0px 300px -61px rgba(148,148,148,1);
+    -moz-box-shadow: 0px 0px 300px -61px rgba(148,148,148,1);
+    box-shadow: 0px 0px 300px -61px rgba(148,148,148,1);
 }
