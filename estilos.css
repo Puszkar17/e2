@@ -4,11 +4,13 @@
 *{
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    scroll-behavior: smooth;
 }
 
 body{
     margin: 0;
     background-color: #796b58;
+    
 }
 
 .menu{
@@ -86,5 +88,66 @@ section{
     background-color: transparent;
 }
 
+.serch input{
 
+    border-radius: 20px;
+    border: 1px black;
+    text-align: center;
+    height: 26px;
+    width:0px;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    margin: 25px;
+    transition: all ease 0.8s;
     
+    
+}
+
+.serch{
+    display: flex;
+    align-items: center;
+    
+}
+
+.lupa{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    color: #796b58;
+    position: fixed;
+    
+    
+    
+}
+    
+.serch:hover input{
+    width: 200px;
+    
+}
+
+.serch input:focus{
+    
+    width: 200px;
+    
+}
+    
+
+
+.flecha{
+    display: grid;
+    place-items: center;
+    top: 95vh;
+    position: relative;
+    font-size: 30;
+    color: white;
+    
+    
+
+}
