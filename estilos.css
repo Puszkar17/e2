@@ -9,9 +9,9 @@
 
 body{
     margin: 0;
-    background: linear-gradient(45deg,#3d3c3c, #3b3a3a, #201f1f, #a12b33);
-    background-size:300% 220%;
-    animation: colors 15s ease infinite;
+    background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
+    background-size:400% 200%;
+    animation: colors 18s ease infinite;
 }
 
 
@@ -59,19 +59,19 @@ body{
     color: white;
     background-color:transparent ;
     text-transform: uppercase;
-    font-size: medium;
+    font-size: 1.2em;
     padding: 20px;
      
 }
 
-button{
+.btt1 {
     
     border: none;
     background-color:transparent;   
 
 }
 
-button :hover{
+.btt1 :hover{
     background-color: aliceblue;
     border-radius: 20px;
     padding: 9px;
@@ -169,9 +169,9 @@ section{
 }
 
 #Sucursales{
-    background: linear-gradient(45deg,#3d3c3c, #3b3a3a, #201f1f, #a12b33);
-    background-size:300% 220%;
-    animation: colors 15s ease infinite;
+    background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
+    background-size:400% 200%;
+    animation: colors 18s ease infinite;
 }
 
 
@@ -184,9 +184,9 @@ section{
 }
 
 #Contacto{
-    background: linear-gradient(45deg,#3d3c3c, #3b3a3a, #201f1f, #a12b33);
-    background-size:300% 220%;
-    animation: colors 15s ease infinite;
+    background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
+    background-size:400% 200%;
+    animation: colors 18s ease infinite;
 }
 
 footer{
@@ -451,11 +451,16 @@ footer{
     margin: 10px;
     text-shadow: #a7a7a700 2px;
     padding: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    transition: background-position 2s ease-out;
+    background-image: linear-gradient(to left,#3d3c3c, #3b3a3a, #a12b33, #861d24);
 }
 
 .data1:hover {
 
-    background-color: #DD4D4D;
+    background-position: left;
 }
 
 
@@ -470,6 +475,31 @@ footer{
     text-shadow: #a7a7a700 2px;
 }
 
+.dataP {
+
+    color: #ffffffc4;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3.8em;
+    backdrop-filter: blur(20px);
+    background-color: #ffffff18;
+    margin: 10px;
+    text-shadow: #a7a7a700 2px;
+    padding: 0;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    transition: background-position 2s ease-out;
+    background-image: linear-gradient(to left,#3d3c3c, #3b3a3a, #a12b33, #861d24);
+
+}
+
+.dataP:hover {
+
+    background-position: left;
+}
+
+
 
 .a:hover {
 
@@ -479,6 +509,7 @@ footer{
 
 .b:hover {
     color: khaki;
+    
 }
 
 
@@ -490,5 +521,53 @@ footer{
     color: #71D18E;
     transition: 1.3s;
 
+}
+
+.sucus{
+
+    background-color: transparent;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+    
+
+}
+
+.sucus ul li{
+    list-style: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 3em;
+    padding: 20px;
+    background-color: #ffffff18;
+    border-bottom: #ffffff 1px solid;
+}
+
+.infos {
+
+    background-color: transparent;
+    color: #413f3fe3;
+    font-size: 1.6em;
+    border: none;
+    margin: 20px;
+    
+}
+
+.infos a{
+  
+    text-decoration: none;
+    font-style: none;
+    border: none;
+    padding: 0 140px;
+    color: #ffffffe3;
+    background-color:#ffffff18;
+}
+
+.infos a:hover {
+    color: #DD4D4D;
 }
 
