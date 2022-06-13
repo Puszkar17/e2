@@ -7,6 +7,14 @@
     scroll-behavior: smooth;
 }
 
+:root{
+
+    --main-color: #ffff;
+
+
+}
+
+
 body{
     margin: 0;
     background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
@@ -34,6 +42,7 @@ body{
     width: 100%;
     display: flex; 
     transition: all 0.5 ease;  
+    
   
 }
 
@@ -172,18 +181,29 @@ section{
     background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
     background-size:400% 200%;
     animation: colors 18s ease infinite;
+    display: flex;
+    align-items: center;
+  
 }
 
 
 
 #SobreNosotros{
-    background-color: #303030;
-    background-image: url(/IMG/organic-nuts-snack-in-bowls-and-spoons.jpg)
-   
 
+    height: 200vh;
+    background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
+    background-size:400% 200%;
+    animation: colors 18s ease infinite;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 #Contacto{
+    
+    height: 50vh;
     background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
     background-size:400% 200%;
     animation: colors 18s ease infinite;
@@ -194,6 +214,19 @@ footer{
     background-color: #303030;
     height: 100px;
 
+}
+
+footer div {
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+footer p {
+    color: white;
+    font-weight: 500;
 }
 
 #Productos{
@@ -350,12 +383,11 @@ footer{
 
 .info{
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     width: 40%;
-    height: 100%;
+    height: 50%;
     margin-left: 30px;
 }
 
@@ -367,8 +399,76 @@ footer{
     background-color: none;
     margin: 10px;
     
+    
+}
+
+.ventajas1 {
+
+    height: 20%;
+    width: 80%;
+    background-color:  #30303027;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid #574a4a75;
+    border-top: 4px white solid;
+    border-bottom: 4px white solid;
+    margin: 80px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
 }
+
+.ventajas1 div {
+
+    width: 25%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0);
+    color:#ffffff;
+    border-radius: 50PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 
+}
+
+.ventajas1 div i {
+
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+
+.ventajas2 {
+
+    height: 20%;
+    width: 80%;
+    background-color:  #30303027;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 1px solid #574a4a75;
+    border-top: 4px white solid;
+    border-bottom: 4px white solid;
+    margin: 80px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.ventajas2 div {
+   
+    width: 18%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.007);
+    border: 1px solid #574a4a75;
+    border-radius: 80px;
+    color: #ffffff;
+}
+
 
 .corazon{
     height: 500px;
@@ -447,7 +547,7 @@ footer{
     font-family: 'Rajdhani', sans-serif;
     font-size: 3em;
     backdrop-filter: blur(20px);
-    background-color: #ffffff18;
+    background-color: #ffffff00;
     margin: 10px;
     text-shadow: #a7a7a700 2px;
     padding: 0;
@@ -470,7 +570,7 @@ footer{
     font-family: 'Rajdhani', sans-serif;
     font-size: 3em;
     backdrop-filter: blur(20px);
-    background-color: #ffffff18;
+    background-color: #ffffff00;
     margin: 10px;
     text-shadow: #a7a7a700 2px;
 }
@@ -482,7 +582,7 @@ footer{
     font-family: 'Rajdhani', sans-serif;
     font-size: 3.8em;
     backdrop-filter: blur(20px);
-    background-color: #ffffff18;
+    background-color: #ffffff00;
     margin: 10px;
     text-shadow: #a7a7a700 2px;
     padding: 0;
@@ -502,7 +602,7 @@ footer{
 
 
 .a:hover {
-
+    
     color: #DD4D4D;
     
 }
@@ -531,20 +631,34 @@ footer{
     display: flex;
     align-items:center;
     justify-content: center;
-    
-    
+    flex-direction: column;
 
 }
 
-.sucus ul li{
+.sucus div p {
+
     list-style: none;
     color: #ffffff;
     font-weight: 500;
     font-family: 'Rajdhani', sans-serif;
     font-size: 3em;
     padding: 20px;
+    margin-bottom: 10px;
     background-color: #ffffff18;
     border-bottom: #ffffff 1px solid;
+    cursor: pointer;
+    width: 500px;
+    height: 50px;
+
+}
+
+.sucus .itu:hover {
+
+    background-image: url(/IMG/7465587a75d1402cb97604e852aba485-removebg-preview.png);
+    width: 1000px;
+    height: 800px;
+
+
 }
 
 .infos {
@@ -563,7 +677,7 @@ footer{
     font-style: none;
     border: none;
     padding: 0 140px;
-    color: #ffffffe3;
+    color: var(--main-color);
     background-color:#ffffff18;
 }
 
