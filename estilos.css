@@ -464,7 +464,7 @@ footer p {
 
 .ventajas2 {
 
-    height: 20%;
+    height: 30%;
     width: 80%;
     background-color:  #30303027;
     backdrop-filter: blur(10px);
@@ -482,12 +482,49 @@ footer p {
 
 .ventajas2 div {
    
-    width: 18%;
+    width: 28%;
     height: 80%;
-    background-color: rgba(255, 255, 255, 0.007);
-    border: 1px solid #574a4a75;
-    border-radius: 80px;
+    cursor: pointer;
+    background-repeat:no-repeat;
     color: #ffffff;
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.ventajas2 p {
+    font-weight: 200;
+    margin:0;
+    text-align: center;
+}
+.elaboracion {
+    background-image: url(/IMG/group-of-chefs-working-in-the-kitchen.jpg);
+    background-size: contain;
+    
+    
+}
+.calidad {
+    background-image: url(/IMG/woman-buys-dishes-in-the-store.jpg);
+    background-size:450px 270px;
+}
+
+.calidad a {
+    font-style: none;
+    text-decoration: none;
+    color:#71D18E;
+    font-weight: 400;
+    
+}
+.distribucion {
+    background-image: url(/IMG/happy-woman-carrying-vegetables-in-bag-at-supermarket.jpg);
+    background-size:450px 270px;
+}
+
+
+.ventajas2 img {
+
+   
+    
 }
 
 
