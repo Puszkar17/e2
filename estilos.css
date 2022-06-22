@@ -10,53 +10,34 @@
 :root{
 
     --main-color: #ffff;
-
-
 }
-
 
 body{
     margin: 0;
-    background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
-    background-size:400% 200%;
-    animation: colors 18s ease infinite;
-}
-
-
-@keyframes colors{
-
-    0%{
-        background-position: 0% 50%;
-    }
-    50%{
-        background-position: 100% 50%;
-    }
-    100%{
-        background-position: 0% 50%;
-    }
+    background-color:#181616;
 }
 
 .menu{
     position: fixed;
-    height: 18%;
+    height: 18vh;
     width: 100%;
     display: flex; 
     transition: all 0.5 ease;  
+    justify-content: center;
     
-  
+ 
 }
 
 .navi{
     
     display: flex;
-    width:100%;
+    width:80%;
     height: 100%;
     align-items: center;
     align-content: center;
-    justify-content: flex-end;  
-    padding-right: 100px;  
-    
-    
+    justify-content: space-around;
+   
+       
 }
 
 .navi a {
@@ -73,6 +54,12 @@ body{
      
 }
 
+.logo img {
+
+    height: 90%;
+    width: 105%;
+}
+
 .btt1 {
     
     border: none;
@@ -80,12 +67,9 @@ body{
 
 }
 
-.btt1 :hover{
-    background-color: aliceblue;
-    border-radius: 20px;
-    padding: 9px;
+.btt1 :hover{   
     color: #DD4D4D;
-    transition: 1.5s;
+    border-bottom: 1px solid white;
     
 }
 
@@ -96,17 +80,30 @@ img {
 
 }
 
+.hero {
+
+    width: 63%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
 main{
-    height: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
 }
 
 section{
     height: 100vh;
-    background-color:#201f1f;
+    background-color:#181616;
 }
 
-.menu.active a{
-    background-color: transparent;
+.menu.active {
+    background-color:#181616;
     
 }.menu.active button{
     background-color: transparent;
@@ -124,8 +121,7 @@ section{
     outline: none;
     margin: 25px;
     transition: all ease 0.8s;
-    
-    
+     
 }
 
 .serch{
@@ -147,8 +143,6 @@ section{
     color: white;
     position: fixed;
     
-    
-    
 }
     
 .serch:hover input{
@@ -159,10 +153,8 @@ section{
 .serch input:focus{
     
     width: 200px;
-    
 }
     
-
 
 .flecha{
     display: grid;
@@ -173,46 +165,53 @@ section{
     color: white;
     text-decoration: 0;
     
-    
-
 }
-
-#Sucursales{
-    background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
-    background-size:400% 200%;
-    animation: colors 18s ease infinite;
-    display: flex;
-    align-items: center;
-  
-}
-
-
 
 #SobreNosotros{
 
     height: 200vh;
-    background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
-    background-size:400% 200%;
+    background-color:#181616;
     animation: colors 18s ease infinite;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     
+    
+}
+
+.clave {
+    color: #DD4D4D;
+
+}
+.clave1 {
+    color: #71D18E;
 }
 
 #Contacto{
-    
-    height: 50vh;
-    background: linear-gradient(45deg,#302e2e, #201f1f, #181616, #440e0e );
-    background-size:400% 200%;
-    animation: colors 18s ease infinite;
+    width: 100%;
+    height: 60vh;
+    background-color:#181616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.contenedorContacto {
+    width: 63%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer{
 
-    background-color: #303030;
-    height: 100px;
+    background-color:#181616;
+    height: 150px;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -229,157 +228,8 @@ footer p {
     font-weight: 500;
 }
 
-#Productos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.prod{
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    margin-top: 100px;
-    height: 70vh;
-    width: 90%;
-
-    
-
-
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(145, 145, 145, 0.075);
-    backdrop-filter: blur(20px);
-    border-radius: 20px;
-    border: 2px rgba(202, 202, 202, 0.096) solid;
-    width: 20%;
-    height: 50%;
-    margin-bottom: 30px;
-    cursor: pointer;
-
-}
-
-.top{
-    width: 100%;
-    height: 25%;
-    border-radius: 20px 20px 0 0;
-    display: flex;
-    text-align: center;
-    text-justify: center;
-    
-
-}
-.top h3{
-    color: rgba(255, 255, 255, 0.863);
-    width: 100%;
-    padding-top: 15px;
-    
-}
-
-.top i{
-    font-size: 25px;
-    background-color:transparent;
-    color: rgba(255, 255, 255, 0.863);
-    padding: 5px;
-}
-
-.top i:hover {
-    color: #DD4D4D ;
-    transition: 0.8s;
-}
-
-.mid{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.mid img{
-   
-    width: auto;
-}
-
-.pie{
-    width: 100%;
-    height: 25%;
-    border-radius: 0 0 20px 20px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: center;
-   
-
-}
-
-.pie i{
-    font-size: 25px;
-    border: 2px rgba(137, 138, 138, 0.548) solid;
-    padding: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.863);
-    
-}
-
-.pie p{
-    width: 100%;
-    height: 70%;
-    padding: 0;
-    margin: 0;
-    margin-left: 25px;
-    font-size:20px;
-    color: rgba(255, 255, 255, 0.863);
-    
-
-}
-
-.pie i:hover {
-    color: #71D18E;
-    transition: 0.8s;
-}
-
-/*.card:hover {
-    -webkit-box-shadow: 0px 0px 300px -61px rgba(148,148,148,1);
-    -moz-box-shadow: 0px 0px 300px -61px rgba(148,148,148,1);
-    box-shadow: 0px 0px 300px -61px rgba(148,148,148,1);
-}*/
-
-.points{
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 40%;
-    left: 98%;
-    animation: movimiento2 2.8s linear infinite;
-    
-}
-
-.points i{
-    
-    padding-top: 30px;
-    color:#ffffff;
-    transition: linear 1s;
-    
-}
-
-.points i:hover {
-    color: #71D18E;
-    transform: translateX(6px)
-}
-    
-
-.submenu{
-    position: fixed;
-    top: 0;
-    left: 96.55%;
-    width: 7vh;
-    height: 100vh;
-    background-color: transparent;
+.contenedorFooter img {
+    width: 150px;
 }
 
 .info{
@@ -390,6 +240,8 @@ footer p {
     width: 40%;
     height: 50%;
     margin-left: 30px;
+    border-bottom: solid 1px white;
+    border-top: solid 1px white;
 }
 
 .data{
@@ -399,20 +251,16 @@ footer p {
     font-size: 3em;
     background-color: none;
     margin: 10px;
-    
+    cursor: pointer;
     
 }
 
 .ventajas1 {
 
     height: 20%;
-    width: 80%;
-    background-color:  #30303027;
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    border: 1px solid #574a4a75;
-    border-top: 4px white solid;
-    border-bottom: 4px white solid;
+    width: 63%;
+    background-color: #3030307a;
+    border:0 4px white solid;
     margin: 80px;
     color: white;
     display: flex;
@@ -441,6 +289,7 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #181616;
     
 }
 
@@ -452,8 +301,6 @@ footer p {
     font-weight: 200;
     font-size: 1.1em;
     
-
-    
 }
 
 .vc:hover {
@@ -464,124 +311,55 @@ footer p {
 
 .ventajas2 {
 
-    height: 30%;
-    width: 80%;
-    background-color:  #30303027;
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    border: 1px solid #574a4a75;
-    border-top: 4px white solid;
-    border-bottom: 4px white solid;
+    height: 20%;
+    width: 63%;
+    background-color: #3030307a;
     margin: 80px;
     color: white;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
 
 }
 
-.ventajas2 div {
-   
-    width: 28%;
-    height: 80%;
-    cursor: pointer;
-    background-repeat:no-repeat;
-    color: #ffffff;
+.numbers {
     display: flex;
-    align-items: flex-end;
-    
 }
 
-.ventajas2 p {
-    font-weight: 200;
-    margin:0;
-    text-align: center;
-}
-.elaboracion {
-    background-image: url(/IMG/group-of-chefs-working-in-the-kitchen.jpg);
-    background-size: contain;
-    
-    
-}
-.calidad {
-    background-image: url(/IMG/woman-buys-dishes-in-the-store.jpg);
-    background-size:450px 270px;
-}
-
-.calidad a {
-    font-style: none;
-    text-decoration: none;
-    color:#71D18E;
-    font-weight: 400;
-    
-}
-.distribucion {
-    background-image: url(/IMG/happy-woman-carrying-vegetables-in-bag-at-supermarket.jpg);
-    background-size:450px 270px;
-}
-
-
-.ventajas2 img {
-
-   
-    
-}
-
-
-.corazon{
-    height: 500px;
-    width: 750px;
-    cursor: pointer;
-}
-    
-
-
-.heart{
-    position: absolute;
-    top: 25%;
-    left: 60%;
+.containVentajas2{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.ventajas2 i {
+    
+    border-radius:300px;
+    height: 150px;
+    width: 150px;
+    display: flex;
     justify-content: center;
-    width: 500px;
-    height: 500px;
-    animation: movimiento 2.8s linear infinite;
+    align-items: center;
+    background-color:#181616;
+    color:#3030307a;
+    font-size: 100px;
+    cursor: pointer;
+    margin: 0 110px;
 }
 
-@keyframes movimiento{
-
-    0% {
-        transform: translateY(0);
-      
-    }
-
-    50%{
-        transform: translateY(80px);
-        
-    }
-
-    100%{
-        transform: translateY(0);}
-        
-
+.ventajas2 i:hover {
+    color: #DD4D4D;
 }
 
 
-/*.heart{
+.containVentajas2 p {
     
-    animation: girar 5s linear infinite;
+    font-weight: 200;
+    margin: 0 40px;
+    text-align:center;
+    width: 300px;
+   
 }
-
-@keyframes girar{
-
-    from{
-        transform: rotate(0);
-    } to{
-        transform: rotate(360deg);
-    }
-
-}*/
-
 
 .info1{
     display: flex;
@@ -589,11 +367,8 @@ footer p {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 12%;
-    left: 8%;
+    width: 100%;
+    height: 50%; 
     cursor: pointer;
 
 }
@@ -604,16 +379,15 @@ footer p {
     font-weight: 500;
     font-family: 'Rajdhani', sans-serif;
     font-size: 3em;
-    backdrop-filter: blur(20px);
-    background-color: #ffffff00;
+    background-color: #ffffff18;
     margin: 10px;
-    text-shadow: #a7a7a700 2px;
     padding: 0;
     background-position: right;
     background-repeat: no-repeat;
     background-size: 300%;
     transition: background-position 2s ease-out;
     background-image: linear-gradient(to left,#3d3c3c, #3b3a3a, #a12b33, #861d24);
+    box-sizing: border-box;
 }
 
 .data1:hover {
@@ -621,16 +395,14 @@ footer p {
     background-position: left;
 }
 
-
 .data2{
     color: #ffffffc4;
     font-weight: 500;
     font-family: 'Rajdhani', sans-serif;
     font-size: 3em;
-    backdrop-filter: blur(20px);
-    background-color: #ffffff00;
-    margin: 10px;
-    text-shadow: #a7a7a700 2px;
+    margin: 0;
+    box-sizing: border-box;
+
 }
 
 .dataP {
@@ -639,8 +411,7 @@ footer p {
     font-weight: 500;
     font-family: 'Rajdhani', sans-serif;
     font-size: 3.8em;
-    backdrop-filter: blur(20px);
-    background-color: #ffffff00;
+    background-color: #ffffff18;
     margin: 10px;
     text-shadow: #a7a7a700 2px;
     padding: 0;
@@ -657,19 +428,15 @@ footer p {
     background-position: left;
 }
 
-
-
 .a:hover {
     
     color: #DD4D4D;
-    
 }
 
 .b:hover {
     color: khaki;
     
 }
-
 
 .c:hover {
     color: #71D18E;
@@ -681,42 +448,55 @@ footer p {
 
 }
 
-.sucus{
+.ClienteFeliz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63%;
+    height: 10%;
+    margin-top: 200px;
 
-    background-color: transparent;
-    width: 40%;
+}
+
+.ClienteFeliz h3 {
+    font-size: 2em;
+    color: #71D18E;
+    font-weight: 700;
+}
+
+#Clientes{
+    
+    background-color:#181616;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+
+.Ustedes{
+
+    background-color:#181616;
+    width: 63%;
     height: 80%;
     display: flex;
     align-items:center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 150px;
+
+}
+
+.Ustedes div {
+    display: flex;
+    text-align: center;
     justify-content: center;
-    flex-direction: column;
-
-}
-
-.sucus div p {
-
-    list-style: none;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: 'Rajdhani', sans-serif;
-    font-size: 3em;
-    padding: 20px;
-    margin-bottom: 10px;
-    background-color: #ffffff18;
-    border-bottom: #ffffff 1px solid;
-    cursor: pointer;
-    width: 500px;
-    height: 50px;
-
-}
-
-.sucus .itu:hover {
-
-    background-image: url(/IMG/7465587a75d1402cb97604e852aba485-removebg-preview.png);
-    width: 1000px;
-    height: 800px;
-
-
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    background-color:#3b3a3a6b;
+    height: 50%;
+    width: 40%;
 }
 
 .infos {
@@ -743,3 +523,123 @@ footer p {
     color: #DD4D4D;
 }
 
+.contenedorFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid white;
+    width: 63%;
+
+}
+
+.contenedorFooter p:hover {
+    color: #DD4D4D;
+}
+
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.redes p {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.subred {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.contact {
+    color: #71D18E;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+.subred i {
+    padding-right: 20px;
+}
+
+.refLogos {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.refLogos i {
+    color: white;
+    padding: 40px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.refLogos i:hover {
+    color: #DD4D4D;
+}
+
+.form {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+
+.formulario {
+    height: 83%;
+    width: 95%;
+    background-color: #181616;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.formulario input {
+    width: 500px;
+    height: 40px;
+    font-size: 1em;
+    color: white;
+    padding-left: 8px;
+    background-color: #181616;
+    border-right:#ffffff solid 2px;
+    border-bottom:#ffffff solid 3px;
+    font-style: none;
+    text-decoration: none;
+    text-decoration-line: none;
+    cursor: pointer;
+}
+.formulario label {
+    margin: 5px;
+    color: #71D18E;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.formulario textarea {
+    background-color: #181616;
+    border-right: solid 2px white;
+    border-bottom:#ffffff solid 3px;
+    color: white;
+    font-size: 1em;
+}
+
+.enviar{
+    background-color: #DD4D4D;
+}
+.enviar:hover {
+    color: #DD4D4D;
+}

@@ -5,12 +5,4 @@ const menu = document.querySelector('.menu')
     })  
 
 
-    var miNombre = "Tobias";
-    
-    console.log (miNombre);
-
-    var saludo = "hola " + miNombre;
-
-    console.log(saludo);
-
-   
+  
