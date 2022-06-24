@@ -564,7 +564,7 @@ footer p {
 .contact {
     color: #71D18E;
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 .subred i {
     padding-right: 20px;
@@ -612,34 +612,50 @@ footer p {
     width: 500px;
     height: 40px;
     font-size: 1em;
+    font-weight: 200;
     color: white;
     padding-left: 8px;
     background-color: #181616;
-    border-right:#ffffff solid 2px;
-    border-bottom:#ffffff solid 3px;
+    border: none;
+    border-bottom:#ffffff solid 2px;
     font-style: none;
     text-decoration: none;
     text-decoration-line: none;
-    cursor: pointer;
+    outline: none;
 }
 .formulario label {
     margin: 5px;
     color: #71D18E;
     font-weight: 900;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .formulario textarea {
     background-color: #181616;
-    border-right: solid 2px white;
-    border-bottom:#ffffff solid 3px;
+    border:#ffffff solid 1px;
     color: white;
     font-size: 1em;
+    outline: none;
+    font-weight: 200;
 }
 
-.enviar{
-    background-color: #DD4D4D;
-}
 .enviar:hover {
     color: #DD4D4D;
+}
+
+.formulario button {
+    width: 500px;
+    height: 40px;
+   background-color: #71D18E;
+   color: white;
+   cursor: pointer;
+   outline: none;
+   border: none;
+   font-size: 1.1em;
+   font-weight: 700;
+}
+
+.formulario button:hover {
+
+    background-color:  #DD4D4D;
 }
